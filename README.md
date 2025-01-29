@@ -20,16 +20,9 @@ A lista de tarefas é manipulada com um serviço HTTP que simula a comunicação
 ## Tecnologias Utilizadas
 
 - **Angular**: Framework principal para construção da aplicação.
+- **Node.js**: Ambiente de execução para JavaScript no lado do servidor.
+- **npm**: Gerenciador de pacotes para instalar dependências.
 - **CSS**: Estilização da interface.
 - **HTTP Client**: Para comunicação com a API (caso haja).
 - **Git**: Controle de versão.
 
-## Como Rodar o Projeto
-
-### 1. Clonar o repositório
-
-Clone o repositório para sua máquina local:
-
-```bash
-git clone https://github.com/seu-usuario/lista-de-tarefas-angular.git
-cd lista-de-tarefas-angular
