@@ -1,28 +1,17 @@
-# Lista de Tarefas - Aplicação Angular
+# Lista de Tarefas (To-Do List)
 
-## Descrição
-
-Este é um projeto simples de gerenciamento de tarefas criado com **Angular**. A aplicação permite que o usuário:
-
-- Adicione tarefas com um título.
-- Marque tarefas como concluídas.
-- Remova tarefas da lista.
-
-A lista de tarefas é manipulada com um serviço HTTP que simula a comunicação com uma API (no seu caso, você pode usar uma API local ou remota).
+Este é um projeto de lista de tarefas (To-Do List) desenvolvido com **Angular** no frontend e **Node.js** no backend. O projeto permite adicionar, listar, marcar como concluída e remover tarefas.
 
 ## Funcionalidades
 
-- **Adicionar tarefa**: Insira o título da tarefa e clique em "Adicionar".
-- **Marcar tarefa como concluída**: Clique no botão "Concluir" para riscar a tarefa.
-- **Remover tarefa**: Clique no botão "Remover" para deletar a tarefa da lista.
-- **Interface responsiva**: A interface é adaptável e funciona bem em diferentes dispositivos.
+- **Adicionar tarefa**: Adicione uma nova tarefa à lista.
+- **Listar tarefas**: Veja todas as tarefas cadastradas.
+- **Concluir tarefa**: Marque uma tarefa como concluída.
+- **Remover tarefa**: Remova uma tarefa da lista.
 
 ## Tecnologias Utilizadas
 
-- **Angular**: Framework principal para construção da aplicação.
-- **Node.js**: Ambiente de execução para JavaScript no lado do servidor.
-- **npm**: Gerenciador de pacotes para instalar dependências.
-- **CSS**: Estilização da interface.
-- **HTTP Client**: Para comunicação com a API (caso haja).
-- **Git**: Controle de versão.
+- **Frontend**: Angular
+- **Backend**: Node.js (Express)
+- **Comunicação**: HTTP (REST API)
 
