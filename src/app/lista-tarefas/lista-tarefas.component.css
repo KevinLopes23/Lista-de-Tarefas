@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f4f8; /* Fundo claro e suave */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Título da aplicação */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2f3d4f;
+  margin-bottom: 30px;
+}
+
+/* Formulário de entrada para adicionar uma tarefa */
+div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+/* Caixa de entrada */
+input {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #4caf50; /* Verde quando focado */
+  box-shadow: 0 0 5px rgba(72, 161, 57, 0.3);
+}
+
+/* Botão adicionar */
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #4caf50; /* Cor verde */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Cor verde mais escura no hover */
+  transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+button:active {
+  transform: translateY(0); /* Desfaz o efeito de levantar ao clicar */
+}
+
+/* Lista de tarefas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Cada item da lista */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de hover no item da lista */
+li:hover {
+  transform: scale(1.03); /* Aumenta o tamanho do item ligeiramente */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+
+/* Texto da tarefa */
+span {
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1;
+  padding-right: 15px; /* Espaço entre o texto e os botões */
+  transition: color 0.3s;
+}
+
+/* Estilo para tarefas concluídas */
+.concluida {
+  text-decoration: line-through;
+  color: #888; /* Tarefa concluída em cinza */
+}
+
+/* Botões dentro de cada item de tarefa */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #f44336; /* Cor vermelha para "Remover" */
+  color: white;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d32f2f; /* Vermelho mais escuro no hover */
+  transform: translateY(-2px);
+}
+
+button[disabled] {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+button[disabled]:hover {
+  background-color: #ddd;
+}
